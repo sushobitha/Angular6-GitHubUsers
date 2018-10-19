@@ -37,4 +37,9 @@ export class AppComponent {
       'repos_url': item.repos_url
     }
   }
+
+  trackByItem(item){
+    if(item)
+      return item.login;
+  }
 }
