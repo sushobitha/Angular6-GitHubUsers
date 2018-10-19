@@ -38,8 +38,7 @@ export class AppComponent {
     }
   }
 
-  trackByItem(item){
-    if(item)
+  trackByItem(index, item){
       return item.login;
   }
 }

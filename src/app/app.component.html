@@ -18,7 +18,7 @@
     <div class="row">
       <div class="col-5">
         <ul class="list-group">
-          <a class="list-group-item" (click)='showDetails(item)' *ngFor="let item of results;trackBy:trackByItem(item)">
+          <a class="list-group-item" (click)='showDetails(item)' *ngFor="let item of results; let indx = index;trackBy:trackByItem">
             {{item.login}}
           </a>
         </ul>
